@@ -61,3 +61,4 @@ jobs:
         with:
           app_location: site
           azure_static_web_apps_api_token: ${{ secrets.STATIC_DEPLOY_KEY }}
+          action: upload
