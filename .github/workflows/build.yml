@@ -37,4 +37,8 @@ jobs:
 
       - name: mkdocs build
         run: |
+          cp -r * src
+
+      - name: mkdocs build
+        run: |
           mkdocs build
