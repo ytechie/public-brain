@@ -35,8 +35,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-autolinks-plugin mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin mkdocs-monorepo-plugin mkdocs-roamlinks-plugin mkdocs-minify-plugin
 
-      - name: mkdocs build
+      - name: copy files to src
         run: |
+          mkdir src
           cp -r * src
 
       - name: mkdocs build
