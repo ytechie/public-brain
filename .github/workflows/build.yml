@@ -38,7 +38,7 @@ jobs:
       - name: copy files to src
         run: |
           mkdir src
-          cp -R * src
+          rsync -Rr . ./src/
 
       - name: mkdocs build
         run: |
