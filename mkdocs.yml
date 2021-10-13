@@ -22,3 +22,4 @@ markdown_extensions:
   - def_list
 nav:
     - 'Second-brain.md'
+docs_dir: '.'
