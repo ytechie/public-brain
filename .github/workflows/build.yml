@@ -37,7 +37,7 @@ jobs:
 
       - name: copy files to src
         run: |
-          cp -r * src/
+          cp -R * src
 
       - name: mkdocs build
         run: |
