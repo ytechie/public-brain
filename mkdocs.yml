@@ -1,0 +1,24 @@
+site_name: public_brain
+plugins:
+  - search
+  - autolinks
+  - roamlinks
+  - awesome-pages
+  - git-revision-date-localized:
+      type: timeago
+  - minify:
+      minify_html: false
+markdown_extensions:
+  - toc:
+      permalink: ⚑
+      baselevel: 2
+  - codehilite:
+      linenums: false
+      guess_lang: true
+  - footnotes
+  - abbr
+  - admonition
+  - meta
+  - def_list
+nav:
+    - 'Second-brain.md'
