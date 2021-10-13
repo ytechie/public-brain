@@ -34,7 +34,29 @@ Our "brain" is also available everywhere, since we can put it in OneNote and hav
 
 This brain also has a public component. Anything put into the _Public_ folder will automatically be published to the internet.
 
-This is a work in progress
+This script uses the `Public` folder within my second brain, and updates the GitHub repo every 30 minutes with no user interaction.
+
+```batch
+  set start_path=%~dp0
+  set repo=%userprofile%\src\public-brain
+
+  cd %repo%
+  git rm -rf .
+
+  xcopy %start_path%Public %repo%\ /E
+
+  git add .
+  git commit -am "Regular auto-commit %date% %time%"
+  git push
+
+  cd %start_path%
+```
+
+## Next Steps
+
+Set up a GitHub build process that uses [mkdocs](https://www.mkdocs.org/) to build a friendly published version of the public brain.
+
+## Other stuff
 
 * Potential tooling: https://github.com/jimbrig/obsidian_published
 * Idea how to push latest to git: https://medium.com/analytics-vidhya/how-i-put-my-mind-under-version-control-24caea37b8a5
