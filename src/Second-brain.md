@@ -60,3 +60,8 @@ Set up a GitHub build process that uses [mkdocs](https://www.mkdocs.org/) to bui
 
 * Potential tooling: https://github.com/jimbrig/obsidian_published
 * Idea how to push latest to git: https://medium.com/analytics-vidhya/how-i-put-my-mind-under-version-control-24caea37b8a5
+* Markdown reference: https://www.markdownguide.org/basic-syntax
+
+### Add-ins
+
+- Standardize / Fix Markdown: https://github.com/cristianvasquez/obsidian-prettify
