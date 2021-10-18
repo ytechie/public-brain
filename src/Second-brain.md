@@ -21,14 +21,18 @@ fastify.get('/', async (request, reply) => {
 })
 ```
 
-And we can also have entire files with code or scripts, for example [dev-setup-example.sh](dev-setup-example.sh)
-
 Our "brain" starts to work like our actual brain (generate a graph with Foam or Obsidian):
 ![](Graph-example.jpg)
 
-Our "brain" is also available everywhere, since we can put it in OneNote and have it sync between machines.
+Our "brain" is also available everywhere, since we can put it in OneDrive (or other sync client) and have it sync between machines.
 
 > Tip: Use "Always Keep on this Device" in case you go offline. :-)
+
+## Other Contents
+
+Your second brain can also contain **markdown files with code blocks** documenting processes or setup commands. I used to store these in .sh or .bat files, but markdown makes more sense for things that are not explicitly scripts.
+
+Your second brain can contain your task list and daily notes. A great [example of this is here](https://forum.obsidian.md/t/how-i-use-daily-notes/3057).
 
 ## The Thalamus
 
